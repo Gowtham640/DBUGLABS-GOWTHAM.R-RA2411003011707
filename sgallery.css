@@ -68,7 +68,7 @@ body {
     display:none;
 }
 #custombutton{
-    display: inline-block; /* Change display property */
+    display: inline-block; 
     height:auto;
     width:auto;
     background-color: rgb(75, 118, 199);
