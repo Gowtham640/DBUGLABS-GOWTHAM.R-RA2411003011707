@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sgallery.css">
+    <script src="sgallery.js" defer></script>
+</head>
+
+<body>
+    <div id="overall">
+        <div id="topbox">
+            <p id="welcome" class="welcome">Welcome to Your<br>Safe Gallery</p>
+            
+        </div>
+        <div id="form">
+            <form id="uploadform">
+                <input type="file" id="fileinput" accept="image/*" required>
+                <label for="fileinput" id="custombutton">Choose File</label>
+                <button type="submit" id="submitpic" hidden>Upload Image</button>
+            </form>
+        </div>
+        <div id="imageholder">
+        </div>
+    </div>
+</body>
+</html>

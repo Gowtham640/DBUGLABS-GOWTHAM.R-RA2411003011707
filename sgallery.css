@@ -1,0 +1,117 @@
+body {
+    background-color: rgb(32, 31, 30);
+    margin: 0;
+}
+
+#overall {
+    display: flex;
+    flex-direction: column; 
+}
+
+@font-face {
+    font-family: gilroy;
+    src: url(Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: styr;
+    src: url(StyreneB-Medium-Trial-BF63f6cc85760c2.otf);
+}
+
+#topbox {
+    background-color: rgba(31, 87, 151, 0); 
+    height: 25vh; 
+    width: 100%; 
+    display: flex;
+    align-items: center; 
+    flex-direction: column; 
+    margin: 0; 
+    animation: color ease-in-out infinite;
+    animation-duration: 20s;
+    border-style: inset;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 2vh;
+    border-color: goldenrod;
+}
+@keyframes color{
+    0%{background-color: rgb(241, 197, 233);}
+    30%{background-color: rgb(240, 94, 232);}
+    60%{background-color: rgb(117, 0, 78);}
+    100%{background-color: rgb(241, 197, 233)}
+}
+
+.welcome {
+    font-family: gilroy;
+    font-size: 80px; 
+    color:rgb(255, 255, 255);
+    stroke: black;
+    stroke-width: 30px;
+    /*color: rgb(212, 59, 48);*/
+    text-align: center; 
+    margin: 0; 
+}
+
+#form {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10%; 
+}
+
+#imageholder {
+    margin-top: 20px; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+#fileinput{
+    display:none;
+}
+#custombutton{
+    display: inline-block; /* Change display property */
+    height:auto;
+    width:auto;
+    background-color: rgb(75, 118, 199);
+    font-family:styr;
+    padding:1vh;
+    border-style:groove;
+    border-color: goldenrod;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#submitpic{
+
+    height:auto;
+    width:auto;
+    background-color: rgb(47, 190, 183);
+    font-family:styr;
+    padding:1vh;
+    border-style: groove;
+    border-radius: 20px;
+    border-color: goldenrod;
+    font-size: 20px;
+}
+
+#imageholder{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.pic{
+    border-style: solid;
+    border-color:white;
+    border-width: 1px;
+    height:20vh;
+    width:auto;
+    z-index: 1;
+}
+.pic:hover{
+    height:40vh;
+    width: auto;
+}
+.higher{
+    z-index: 2;
+    font-family: styr;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
